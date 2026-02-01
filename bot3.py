@@ -95,7 +95,7 @@ def start(m):
     bot.send_message(
         m.chat.id,
         "👋 <b>Welcome to Professional SMS Bot</b>\n\n"
-        "✔ Easy & Fast\n✔ Stable & Pro\n✔ 2 Free SMS added",
+        "✔ Easy & Fast\n✔ Stable & Pro",
         reply_markup=main_menu(uid)
     )
 
@@ -144,7 +144,7 @@ def sms_flow(m):
         bot.send_message(m.chat.id,"⏳ Sending SMS...")
 
         try:
-            api_url = f"https://hakvolution.com/KEY/sub.php?key=FREE6T9&number={state['number']}&msg={msg_text}"
+            api_url = f"https://helobuy.shop/csms.php?key=unknown2&number={state['number']}&message={msg_text}"
             r = requests.get(api_url, timeout=10)
             result = r.json()
 
